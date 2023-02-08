@@ -79,9 +79,9 @@ const CurrentMateHolder = (props) => {
   };
 
   return (
-    <div className="flex flex-col items-center text-gray-900 bg-gray-200/80 rounded-3xl p-5 gap-4">
+    <div className="flex flex-col items-center text-gray-900 bg-gray-200/90 rounded-3xl p-5 gap-4">
       <h1 className="text-4xl font-bold text-center">
-        Quien tiene el mate ahora?
+        Quién tiene el mate ahora?
       </h1>
       <MateHolder holder={holder} />
     </div>
@@ -113,8 +113,8 @@ const HistoricBoard = (props) => {
   }));
   console.log(holders);
   return (
-    <div className="w-full flex flex-col items-center text-gray-900 bg-gray-200/80 rounded-3xl p-5 gap-4">
-      <h1 className="text-4xl font-bold text-center">Quien ya tomó mate?</h1>
+    <div className="w-full flex flex-col items-center text-gray-900 bg-gray-200/90 rounded-3xl p-5 gap-4">
+      <h1 className="text-4xl font-bold text-center">Quién ya tomó mate?</h1>
       {holders?.map((holder) => (
         <MateHolder holder={holder} />
       ))}
