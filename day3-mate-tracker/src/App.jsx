@@ -12,7 +12,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="bg-[url('mate-background.avif')] bg-cover bg-fixed flex flex-col align-center items-center gap-8 py-8 px-4 w-full m-0 h-full min-h-screen">
+      <div className="bg-[url('/mate-background.avif')] bg-cover bg-fixed flex flex-col align-center items-center gap-8 py-8 px-4 w-full m-0 h-full min-h-screen">
         <MateApp />
       </div>
     </QueryClientProvider>
