@@ -8,6 +8,23 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          // {
+          //   key: "X-Frame-Options",
+          //   value: "DENY",
+          // },
+          {
+            key: "Content-Security-Policy",
+            value: "frame-ancestors https://bestem.dev", // Add here domains to allow for embedding
+          },
+        ],
+      },
+    ];
+  },
   reactStrictMode: true,
 
   /**

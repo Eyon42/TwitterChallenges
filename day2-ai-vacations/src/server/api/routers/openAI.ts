@@ -20,8 +20,8 @@ export const openAI = createTRPCRouter({
     .query(async ({ input }) => {
       console.log("Querying OpenAI", input);
       const completion = await openai.createCompletion({
-        model: "text-davinci-002",
-        // model: "text-ada-001",
+        // model: "text-davinci-002",
+        model: "text-ada-001",
         prompt: input.text,
         max_tokens: 256,
       });
