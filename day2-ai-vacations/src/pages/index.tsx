@@ -116,6 +116,12 @@ const Home: NextPage = () => {
             )}
           </div>
         </div>
+        <div className="absolute bottom-0 mx-auto flex w-full items-center justify-center p-1 text-center align-middle text-gray-400">
+          Hecho por{" "}
+          <a href="https://bestem.dev" className="m-1 underline">
+            Bestem.dev
+          </a>
+        </div>
       </main>
     </>
   );
