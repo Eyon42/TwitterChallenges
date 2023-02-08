@@ -28,7 +28,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>AI Travel Reccomender</title>
+        <title>CheCityBot</title>
         <meta name="description" content="Ai Travel Recommender" />
       </Head>
       <main>
